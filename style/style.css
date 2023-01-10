@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.navigation{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation li{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 150px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    transition: all 0.5s ease-out;
+}
+
+.navigation li::after {
+    content: "";
+    height: 30px;
+    width: 1px;
+    margin-left: 55px;
+    background-color:black;
+}
+
+.navigation li:last-child::after {
+    display: none;
+}
+
+.navigation li a:hover {
+    color: blue;
+}
+
+.menu{
+    display: none;
+    color: black;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.menu span{
+    width: 50px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.main-page{
+    background-image: url(../images/IMG\ Empire\ State\ 0.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-widh: 1024px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: none;
+    }
+}
